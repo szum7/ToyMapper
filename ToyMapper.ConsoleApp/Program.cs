@@ -1,12 +1,15 @@
-﻿using System;
-
-namespace ToyMapper
+﻿namespace ToyMapper
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new SetupAutoMapper().Run();
+            new SetupTinyMapper().Run();
+            new SetupMapperly().Run();
+            new SetupMapster().Run();
+
+            Console.WriteLine("END.");
         }
     }
 }
